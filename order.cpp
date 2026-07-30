@@ -179,30 +179,6 @@ int main(){
     bookFile << orderbookJson.dump(4);
     bookFile.close();
 
-    // cout << "----- TRADES -----\n";
-    // for (Trade& t : allTrades) {
-    //     cout << "Buy Order " << t.buyOrderId << " (User " << t.buyUserId << ") "
-    //          << "matched with Sell Order " << t.sellOrderId << " (User " << t.sellUserId << ") "
-    //          << "-> " << t.quantity << " shares @ Rs" << t.price
-    //          << " at t=" << t.timestamp << "\n";
-    // }
-
-    // // Step 6: Print remaining book state
-    // cout << "\n----- REMAINING BIDS -----\n";
-    // while (!bids.empty()) {
-    //     Order o = bids.top(); bids.pop();
-    //     cout << "Order " << o.orderId << " (User " << o.userId << "): "
-    //          << o.quantity << " @ Rs" << o.price << "\n";
-    // }
-
-    // cout << "\n----- REMAINING ASKS -----\n";
-    // while (!asks.empty()) {
-    //     Order o = asks.top(); asks.pop();
-    //     cout << "Order " << o.orderId << " (User " << o.userId << "): "
-    //          << o.quantity << " @ Rs" << o.price << "\n";
-    // }
-
-    // return 0;
 }
 
 

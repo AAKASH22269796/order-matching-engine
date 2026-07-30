@@ -1,0 +1,12 @@
+# Compiled binaries
+order.exe
+order
+*.o
+*.obj
+
+# OS-specific junk files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/

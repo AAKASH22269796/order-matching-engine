@@ -1,0 +1,160 @@
+{
+    "asks": [
+        {
+            "orderId": 43,
+            "price": 49.33,
+            "quantity": 17,
+            "timestamp": 43,
+            "userId": 3
+        },
+        {
+            "orderId": 17,
+            "price": 55.18,
+            "quantity": 36,
+            "timestamp": 17,
+            "userId": 5
+        },
+        {
+            "orderId": 49,
+            "price": 56.38,
+            "quantity": 36,
+            "timestamp": 49,
+            "userId": 1
+        },
+        {
+            "orderId": 42,
+            "price": 57.53,
+            "quantity": 11,
+            "timestamp": 42,
+            "userId": 2
+        },
+        {
+            "orderId": 39,
+            "price": 57.72,
+            "quantity": 65,
+            "timestamp": 39,
+            "userId": 1
+        },
+        {
+            "orderId": 12,
+            "price": 58.85,
+            "quantity": 26,
+            "timestamp": 12,
+            "userId": 1
+        },
+        {
+            "orderId": 46,
+            "price": 59.75,
+            "quantity": 16,
+            "timestamp": 46,
+            "userId": 8
+        },
+        {
+            "orderId": 14,
+            "price": 59.86,
+            "quantity": 25,
+            "timestamp": 14,
+            "userId": 7
+        }
+    ],
+    "bids": [
+        {
+            "orderId": 28,
+            "price": 48.77,
+            "quantity": 29,
+            "timestamp": 28,
+            "userId": 3
+        },
+        {
+            "orderId": 45,
+            "price": 48.53,
+            "quantity": 18,
+            "timestamp": 45,
+            "userId": 2
+        },
+        {
+            "orderId": 23,
+            "price": 48.49,
+            "quantity": 90,
+            "timestamp": 23,
+            "userId": 6
+        },
+        {
+            "orderId": 41,
+            "price": 48.23,
+            "quantity": 45,
+            "timestamp": 41,
+            "userId": 1
+        },
+        {
+            "orderId": 27,
+            "price": 47.58,
+            "quantity": 32,
+            "timestamp": 27,
+            "userId": 7
+        },
+        {
+            "orderId": 47,
+            "price": 46.79,
+            "quantity": 84,
+            "timestamp": 47,
+            "userId": 2
+        },
+        {
+            "orderId": 16,
+            "price": 43.76,
+            "quantity": 90,
+            "timestamp": 16,
+            "userId": 4
+        },
+        {
+            "orderId": 34,
+            "price": 43.17,
+            "quantity": 77,
+            "timestamp": 34,
+            "userId": 4
+        },
+        {
+            "orderId": 9,
+            "price": 43.04,
+            "quantity": 62,
+            "timestamp": 9,
+            "userId": 6
+        },
+        {
+            "orderId": 44,
+            "price": 42.29,
+            "quantity": 37,
+            "timestamp": 44,
+            "userId": 2
+        },
+        {
+            "orderId": 40,
+            "price": 42.08,
+            "quantity": 44,
+            "timestamp": 40,
+            "userId": 3
+        },
+        {
+            "orderId": 8,
+            "price": 41.88,
+            "quantity": 58,
+            "timestamp": 8,
+            "userId": 8
+        },
+        {
+            "orderId": 15,
+            "price": 41.4,
+            "quantity": 37,
+            "timestamp": 15,
+            "userId": 2
+        },
+        {
+            "orderId": 25,
+            "price": 41.15,
+            "quantity": 13,
+            "timestamp": 25,
+            "userId": 8
+        }
+    ]
+}

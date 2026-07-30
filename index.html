@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Book Dashboard</title>
+</head>
+<body>
+    <h1>Order Matching Engine Dashboard</h1>
+
+    <div style="display: flex; gap: 40px;">
+        <div>
+            <h2>Bids</h2>
+            <table border="1" id="bidsTable">
+                <tr><th>Order ID</th><th>User</th><th>Price</th><th>Qty</th></tr>
+            </table>
+        </div>
+
+        <div>
+            <h2>Asks</h2>
+            <table border="1" id="asksTable">
+                <tr><th>Order ID</th><th>User</th><th>Price</th><th>Qty</th></tr>
+            </table>
+        </div>
+    </div>
+
+    <h2>Trade Log</h2>
+    <table border="1" id="tradesTable">
+        <tr><th>Buy Order</th><th>Buy User</th><th>Sell Order</th><th>Sell User</th><th>Price</th><th>Qty</th><th>Time</th></tr>
+    </table>
+
+    <script>
+        // JS goes here
+        async function loadDashboard() {
+        const orderbook = await fetch('orderbook.json').then(res => res.json());
+        const trades = await fetch('trades.json').then(res => res.json());
+
+        const bidsTable = document.getElementById('bidsTable');
+        for (const bid of orderbook.bids) {
+            const row = bidsTable.insertRow();
+            row.insertCell(0).innerText = bid.orderId;
+            row.insertCell(1).innerText = bid.userId;
+            row.insertCell(2).innerText = bid.price;
+            row.insertCell(3).innerText = bid.quantity;
+        }
+
+        const asksTable = document.getElementById('asksTable');
+        for (const ask of orderbook.asks) {
+            const row = asksTable.insertRow();
+            row.insertCell(0).innerText = ask.orderId;
+            row.insertCell(1).innerText = ask.userId;
+            row.insertCell(2).innerText = ask.price;
+            row.insertCell(3).innerText = ask.quantity;
+        }
+
+        const tradesTable = document.getElementById('tradesTable');
+        for (const trade of trades) {
+            const row = tradesTable.insertRow();
+            row.insertCell(0).innerText = trade.buyOrderId;
+            row.insertCell(1).innerText = trade.buyUserId;
+            row.insertCell(2).innerText = trade.sellOrderId;
+            row.insertCell(3).innerText = trade.sellUserId;
+            row.insertCell(4).innerText = trade.price;
+            row.insertCell(5).innerText = trade.quantity;
+            row.insertCell(6).innerText = trade.timestamp;
+        }
+    }
+
+    loadDashboard();
+    </script>
+</body>
+</html>
